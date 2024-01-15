@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="seffaf">#00000000 </color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#E33435</color>
+    <color name="colorPrimaryDark">#E33435</color>
+    <color name="colorAccent">#1A191E</color>
+    <color name="colorItem1Start">#FEBD1B</color>
+    <color name="colorItem1End">#E4A401</color>
+    <color name="colorItem2Start">#4D79FF</color>
+    <color name="colorItem2End">#0039E6</color>
+    <color name="colorItem3Start">#993399</color>
+    <color name="colorItem3End">#602060</color>
+    <color name="colorItem4Start">#00B33C</color>
+    <color name="colorItem4End">#006622</color>
+    <color name="colorEndBackground">#50FFFFFF</color>
+    <color name="colorLightText">#ECECEC</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+
+    <color name="anıToolbarRengi">#27374D</color>
+    <color name="dalganın_rengi">#526D82</color>
+    <color name="dalganınArkasındakiRenk">#9DB2BF</color>
+    <color name="adapter_item_view_arka_plan_rengi">#DDE6ED</color>
+    <color name="toolBar_yazi_rengi">#DDE6ED</color>
+
+
+    <color name="text_view_arka_plan_rengi">#DDE6ED</color>
+    <color name="fabButonrengi">#424874</color>
+    <color name="ratingBarArkaPlanRengi">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="kitabaPuanVeriniz">#27374D</color>
+    <color name="aciklamaVeOzetArkaPlanrengi">#DDE6ED</color>
+
+    <color name="iciBossYildizRengi">#DDE6ED</color>
+    <color name="iciDoluYildizRengi">#27374D</color>
+    <color name="textViewVeEditTextYazırengi">#184A50</color>
+    <color name="hintRengi">#32184A50</color>
+
+
+
+    <color name="secilmemis_icon_ve_yazi_rengi">@color/dalganınArkasındakiRenk</color>
+    <color name="secilmis_icon_ve_yazi_rengi">#2998DD</color>
+
+    306895
+    ACC2CD
+    <color name="kategori_rengi_sol_renk">#33527C</color>
+    <color name="kategori_rengi_orta_renk">@color/dalganın_rengi</color>
+    <color name="kategori_rengi_sağ_renk">@color/dalganınArkasındakiRenk</color>
+
+
+
+
+
+
+
+
+
+
+</resources>

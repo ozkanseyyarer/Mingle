@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/giris_ekrani_arkaplan"
+    tools:context=".girisactivity.KayitOlAktivity">
+
+    <ProgressBar
+        android:id="@+id/kayit_ol_activity_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/kayit_ol_activity_animasyonGorseli"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/centerline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        app:srcCompat="@drawable/giris_ekrani_gorsel"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Yeni Kullanıcı"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Aramıza Hoşgeldin"
+            android:textColor="#ffeb3b"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/centerline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerline"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_arkaplan"
+        android:padding="5dp"
+        app:boxBackgroundColor="@color/seffaf">
+
+        <EditText
+            android:id="@+id/kayit_ol_activity_editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/seffaf"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_arkaplan"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <EditText
+            android:id="@+id/kayit_ol_activity_editTextParola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/seffaf"
+            android:hint="Parola"
+            android:paddingLeft="20dp"
+            android:inputType="numberPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/kayit_ol_activity_butonKayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/giris_erkani_buton_arkaplan"
+        android:text="Kayıt Ol"
+        android:textColor="#ff3f6f"
+        android:textSize="18sp"
+        android:elevation="20dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/kayit_ol_activity_textViewGalibaHesabimVardi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kayit_ol_activity_butonKayitOl"
+        android:layout_marginTop="10dp"
+        android:text="Galiba Hesabım Vardı"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+
+
+
