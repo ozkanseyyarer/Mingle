@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Mingle" parent="Base.Theme.Mingle" />
+    <style name="Theme.Mingle" parent="Base.Theme.Mingle" >
+        <item name="colorAccent">@color/dalganın_rengi</item>
+    </style>
 </resources>

@@ -16,6 +16,18 @@
         android:theme="@style/Theme.Mingle"
         tools:targetApi="31">
         <activity
+            android:name=".activity.GezdigimYerlerDetayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GezdigimYerlerDuzenlemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GezdigimYerlerEkleActvity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GezdigimYerlerActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ornekActivity"
             android:exported="false" />
         <activity

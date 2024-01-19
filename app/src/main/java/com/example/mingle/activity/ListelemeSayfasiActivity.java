@@ -57,6 +57,12 @@ public class ListelemeSayfasiActivity extends AppCompatActivity {
             }
         });
 
+        binding.gezdigimYerler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), GezdigimYerlerActivity.class));
+            }
+        });
     }
 
     @Override
