@@ -151,28 +151,34 @@
                             android:gravity="center">
 
                             <TextView
+
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:id="@+id/gezdigim_yerler_ekle_activity_textView_gun"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="01" />
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="/" />
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:id="@+id/gezdigim_yerler_ekle_activity_textView_ay"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="01" />
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="/" />
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:id="@+id/gezdigim_yerler_ekle_activity_textView_yil"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -204,20 +210,26 @@
                             android:layout_gravity="center_vertical">
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:id="@+id/gezdigim_yerler_ekle_activity_textView_saat"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textSize="16sp"
                                 android:text="23" />
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textSize="16sp"
                                 android:text=":" />
 
                             <TextView
+                                android:textColor="@color/textViewVeEditTextYazırengi"
                                 android:id="@+id/gezdigim_yerler_ekle_activity_textView_dakika"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textSize="16sp"
                                 android:text="00" />
 
 

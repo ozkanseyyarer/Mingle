@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
+import com.example.mingle.R;
 import com.example.mingle.databinding.GezdigimYerlerEkleActvityBinding;
 
 import java.util.Locale;
@@ -29,18 +30,8 @@ public class GezdigimYerlerEkleActvity extends AppCompatActivity {
         binding.gezdigimYerlerEkleActivityLinearLayoutTarihEkle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Locale locale = new Locale("tr");
-                Locale.setDefault(locale);
 
-                Resources resources = getResources();
-                Configuration configuration;
-                configuration = resources.getConfiguration();
-                configuration.setLocale(locale);
-
-                Context context = createConfigurationContext(configuration);
-                resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-
-                DatePickerDialog takvim = new DatePickerDialog(GezdigimYerlerEkleActvity.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog takvim = new DatePickerDialog(GezdigimYerlerEkleActvity.this,new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
 
