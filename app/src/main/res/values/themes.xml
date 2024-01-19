@@ -7,4 +7,7 @@
 
     <style name="Theme.Mingle" parent="Base.Theme.Mingle"/>
 
+    <style name="DialogTemasi" parent="Theme.AppCompat.DayNight.Dialog" >
+        <item name="colorAccent">@color/dalganın_rengi</item>
+    </style>
 </resources>
