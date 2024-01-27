@@ -76,7 +76,7 @@
                 android:padding="10dp"
                 android:text="Kitap Adı"
                 android:textAlignment="center"
-                android:textColor="@color/textViewVeEditTextYazırengi"
+                android:textColor="@color/textViewVeEditTextYazirengi"
                 android:textSize="20sp" />
         </androidx.cardview.widget.CardView>
 
@@ -98,7 +98,7 @@
                 android:padding="10dp"
                 android:text="Yazar Adı"
                 android:textAlignment="center"
-                android:textColor="@color/textViewVeEditTextYazırengi"
+                android:textColor="@color/textViewVeEditTextYazirengi"
                 android:textSize="16sp" />
         </androidx.cardview.widget.CardView>
 
@@ -125,7 +125,7 @@
                     android:id="@+id/kitap_detay_activity_textViewKitapOzeti"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/textViewVeEditTextYazırengi"
+                    android:textColor="@color/textViewVeEditTextYazirengi"
                     android:textSize="16sp" />
             </ScrollView>
 

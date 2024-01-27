@@ -125,7 +125,7 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/giris_erkani_buton_arkaplan"
         android:text="Giriş Yap"
-        android:textColor="#ff3f6f"
+        android:textColor="@color/dalganın_rengi"
         android:textSize="18sp"
         android:elevation="20dp"
         android:textStyle="bold">
@@ -140,7 +140,7 @@
         android:layout_marginTop="10dp"
         android:text="Şifremi Unuttum"
         android:textAlignment="center"
-        android:textColor="@color/black" />
+        android:textColor="@color/dalganınArkasındakiRenk" />
 
     <Button
         android:id="@+id/giris_ekrani_activity_butonKayitOl"
@@ -153,7 +153,7 @@
         android:layout_marginBottom="25dp"
         android:background="@drawable/giris_erkani_buton_arkaplan"
         android:text="Kayıt Ol"
-        android:textColor="#ff3f6f"
+        android:textColor="@color/dalganın_rengi"
         android:textSize="18sp"
         android:textStyle="bold">
 

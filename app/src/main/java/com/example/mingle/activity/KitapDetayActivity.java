@@ -39,14 +39,14 @@ public class KitapDetayActivity extends AppCompatActivity {
         binding.kitapDetayActivityFabEkleButonu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(view.getContext(), KitapDuzenlemeActivity.class);
+                Intent intent = new Intent(v.getContext(), KitapDuzenlemeActivity.class);
                 intent.putExtra("downloadUrl", data.getStringExtra("downloadUrl"));
                 intent.putExtra("kitapAdi", data.getStringExtra("kitapAdi"));
                 intent.putExtra("kitapOzeti", data.getStringExtra("kitapOzeti"));
                 intent.putExtra("kitapYazari", data.getStringExtra("kitapYazari"));
                 intent.putExtra("kullaniciPuani", data.getStringExtra("kullaniciPuani"));
                 intent.putExtra("kitapId",data.getStringExtra("kitapId") );
-                view.getContext().startActivity(intent);
+                v.getContext().startActivity(intent);
             }
         });
     }

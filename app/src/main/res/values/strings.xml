@@ -5,5 +5,6 @@
     <string name="gezdigim_yerler_aciklama">Gezdiğiniz yerlerle ilgili açıklama, fotoğraf, konum ve tarih ekleyebilirsiniz.</string>
     <string name="okudugum_kitaplar_aciklama">Okuduğunuz kitaplarla ilgili açıklama, fotoğraf ve tarih ekleyebilirsiniz.</string>
     <string name="izledigim_fimler_aciklama">İzlediğiniz filmlerle ilgili açıklama, fotoğraf ve tarih ekleyebilirsiniz.</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

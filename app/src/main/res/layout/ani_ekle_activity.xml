@@ -98,7 +98,7 @@
                         android:hint="Başlık"
                         android:padding="5dp"
                         android:textAlignment="center"
-                        android:textColor="@color/textViewVeEditTextYazırengi"
+                        android:textColor="@color/textViewVeEditTextYazirengi"
                         android:textColorHint="@color/hintRengi"
                         android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -133,7 +133,7 @@
                             android:maxLines="10"
                             android:padding="5dp"
                             android:textAlignment="center"
-                            android:textColor="@color/textViewVeEditTextYazırengi"
+                            android:textColor="@color/textViewVeEditTextYazirengi"
                             android:textColorHint="@color/hintRengi"
                             android:textSize="18dp" />
 

@@ -1,7 +1,7 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="500dp"
+    android:width="800dp"
     android:height="320dp"
-    android:viewportWidth="1000"
+    android:viewportWidth="550"
     android:viewportHeight="650">
     <path
         android:fillColor="@color/dalganın_rengi"

@@ -12,11 +12,11 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/gezdigim_yerler_detay_activity_toolbar"
+        android:layout_below="@+id/toolbar"
         android:background="@drawable/dalga" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/gezdigim_yerler_detay_activity_toolbar"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@drawable/toolbar_arka_plan">
@@ -33,12 +33,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/gezdigim_yerler_detay_activity_toolbar"
+        android:layout_below="@id/toolbar"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/gezdigim_yerler_detay_activity_imageViewKitapResmi"
+            android:id="@+id/imageViewYerResmi"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -47,7 +47,7 @@
             android:src="@drawable/gezdigimyerresmi" />
 
         <RatingBar
-            android:id="@+id/gezdigim_yerler_detay_activity_yildizlar"
+            android:id="@+id/ratingBar_yildizlar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -57,6 +57,168 @@
             android:progressBackgroundTint="@color/iciBossYildizRengi"
             android:progressTint="@color/iciDoluYildizRengi"
             android:stepSize="1" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/text_view_arka_plan_rengi"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+
+                    android:id="@+id/linear_layout_tarih_ekle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/normal_takvim" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:id="@+id/textView_gun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="01"
+                            android:textColor="@color/textViewVeEditTextYazirengi" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="."
+                            android:textColor="@color/textViewVeEditTextYazirengi" />
+
+                        <TextView
+                            android:id="@+id/textView_ay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="02"
+                            android:textColor="@color/textViewVeEditTextYazirengi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="."
+                            android:textColor="@color/textViewVeEditTextYazirengi" />
+
+                        <TextView
+                            android:id="@+id/textView_yil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="2024"
+                            android:textColor="@color/textViewVeEditTextYazirengi" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_saat_ekle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/baseline_access_time_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView_saat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23"
+                            android:textColor="@color/textViewVeEditTextYazirengi"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@color/textViewVeEditTextYazirengi"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView_dakika"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:textColor="@color/textViewVeEditTextYazirengi"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:background="@drawable/konumu_gor_arka_plan"
+                    android:id="@+id/linear_layout_konum_ekle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/baseline_add_location_24" />
+
+                    <TextView
+
+                        android:id="@+id/textView_konum_ekle_yazisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Konumu Gör"
+                        android:textColor="@color/textViewVeEditTextYazirengi"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -68,7 +230,7 @@
             app:cardElevation="3dp">
 
             <TextView
-                android:id="@+id/gezdigim_yerler_detay_activity_textViewKitapIsmi"
+                android:id="@+id/textViewYerIsmi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/text_view_arka_plan_rengi"
@@ -76,7 +238,7 @@
                 android:padding="10dp"
                 android:text="Gezilen Yer"
                 android:textAlignment="center"
-                android:textColor="@color/textViewVeEditTextYazırengi"
+                android:textColor="@color/textViewVeEditTextYazirengi"
                 android:textSize="20sp" />
         </androidx.cardview.widget.CardView>
 
@@ -99,10 +261,10 @@
                 android:scrollbars="none">
 
                 <TextView
-                    android:id="@+id/gezdigim_yerler_detay_activity_textViewKitapOzeti"
+                    android:id="@+id/textView_yer_Ozeti"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/textViewVeEditTextYazırengi"
+                    android:textColor="@color/textViewVeEditTextYazirengi"
                     android:textSize="16sp" />
             </ScrollView>
 
@@ -113,7 +275,7 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/gezdigim_yerler_detay_activity_fabDuzenleButonu"
+        android:id="@+id/fabDuzenleButonu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

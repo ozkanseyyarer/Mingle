@@ -32,7 +32,6 @@ public class ListelemeSayfasiActivity extends AppCompatActivity {
         toolbar = binding.listelemeSayfasiActivityToolBar;
         setSupportActionBar(toolbar);
 
-        binding.bottomNavigationView.setItemIconTintList(null);
 
         firebaseAuth = FirebaseAuth.getInstance();
 

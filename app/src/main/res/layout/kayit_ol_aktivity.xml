@@ -120,7 +120,7 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/giris_erkani_buton_arkaplan"
         android:text="Kayıt Ol"
-        android:textColor="#ff3f6f"
+        android:textColor="@color/dalganın_rengi"
         android:textSize="18sp"
         android:elevation="20dp"
         android:textStyle="bold">
@@ -135,7 +135,7 @@
         android:layout_marginTop="10dp"
         android:text="Galiba Hesabım Vardı"
         android:textAlignment="center"
-        android:textColor="@color/black" />
+        android:textColor="@color/dalganınArkasındakiRenk" />
 
 </RelativeLayout>
 

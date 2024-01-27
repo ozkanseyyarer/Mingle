@@ -76,7 +76,7 @@
                 android:padding="10dp"
                 android:text="Başlık"
                 android:textAlignment="center"
-                android:textColor="@color/textViewVeEditTextYazırengi"
+                android:textColor="@color/textViewVeEditTextYazirengi"
                 android:textSize="20sp" />
         </androidx.cardview.widget.CardView>
 
@@ -105,7 +105,7 @@
                     android:id="@+id/ani_detay_activity_textViewAniOzeti"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/textViewVeEditTextYazırengi"
+                    android:textColor="@color/textViewVeEditTextYazirengi"
                     android:textSize="16sp" />
             </ScrollView>
 

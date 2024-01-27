@@ -36,8 +36,8 @@
     <color name="aciklamaVeOzetArkaPlanrengi">#DDE6ED</color>
 
     <color name="iciBossYildizRengi">#DDE6ED</color>
-    <color name="iciDoluYildizRengi">#27374D</color>
-    <color name="textViewVeEditTextYazırengi">#184A50</color>
+    <color name="iciDoluYildizRengi">#0C418A</color>
+    <color name="textViewVeEditTextYazirengi">#184A50</color>
     <color name="hintRengi">#32184A50</color>
 
 

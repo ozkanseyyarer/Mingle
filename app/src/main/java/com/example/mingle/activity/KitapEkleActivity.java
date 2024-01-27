@@ -140,9 +140,11 @@ public class KitapEkleActivity extends AppCompatActivity {
                 String userId = firebaseUser.getUid();
 
                 if (imageData == null || kitapAdi.isEmpty() || kitapYazari.isEmpty() || kitapOzeti.isEmpty() || kullaniciOyu == 0) {
+                    binding.kitapEkleActivityFabEkleButonu.setClickable(true);
                     Toast.makeText(KitapEkleActivity.this, "Lütfen istenilen bilgileri doldurunuz", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    binding.kitapEkleActivityFabEkleButonu.setClickable(false);
 
                     binding.kitapEkleActivityProgressBar.setVisibility(View.VISIBLE);
                     UUID uuid = UUID.randomUUID();
@@ -170,6 +172,8 @@ public class KitapEkleActivity extends AppCompatActivity {
                                     firebaseFirestore.collection("okunan_kitaplar").add(kitapVerisi).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                         @Override
                                         public void onSuccess(DocumentReference documentReference) {
+                                            binding.kitapEkleActivityFabEkleButonu.setClickable(false);
+
                                             Toast.makeText(KitapEkleActivity.this, "Kitap kaydedildi", Toast.LENGTH_SHORT).show();
                                             Intent intent = new Intent(KitapEkleActivity.this, OkudugumKitaplarActivity.class);
                                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -181,6 +185,7 @@ public class KitapEkleActivity extends AppCompatActivity {
                                             binding.kitapEkleActivityProgressBar.setVisibility(View.INVISIBLE);
 
                                             Toast.makeText(KitapEkleActivity.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                                            binding.kitapEkleActivityFabEkleButonu.setClickable(true);
                                         }
                                     });
 
@@ -193,12 +198,12 @@ public class KitapEkleActivity extends AppCompatActivity {
                             binding.kitapEkleActivityProgressBar.setVisibility(View.INVISIBLE);
 
                             Toast.makeText(KitapEkleActivity.this, "Görselin yüklenme sırasında bir hata oluştu", Toast.LENGTH_SHORT).show();
+                            binding.kitapEkleActivityFabEkleButonu.setClickable(true);
                         }
                     });
                 }
 
 
-                binding.kitapEkleActivityFabEkleButonu.setClickable(false);
 
             }
         });

@@ -15,8 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.mingle.R;
-import com.example.mingle.databinding.AniDuzenlemeActivityBinding;
 import com.example.mingle.databinding.KitapDuzenlemeActivityBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
