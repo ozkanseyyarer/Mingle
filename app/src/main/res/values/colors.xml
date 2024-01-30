@@ -45,8 +45,6 @@
     <color name="secilmemis_icon_ve_yazi_rengi">@color/dalganınArkasındakiRenk</color>
     <color name="secilmis_icon_ve_yazi_rengi">#2998DD</color>
 
-    306895
-    ACC2CD
     <color name="kategori_rengi_sol_renk">#33527C</color>
     <color name="kategori_rengi_orta_renk">@color/dalganın_rengi</color>
     <color name="kategori_rengi_sağ_renk">@color/dalganınArkasındakiRenk</color>
