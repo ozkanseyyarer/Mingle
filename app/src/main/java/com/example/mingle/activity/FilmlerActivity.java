@@ -80,39 +80,46 @@ public class FilmlerActivity extends AppCompatActivity {
 
     }
 
+    //...
+
     private void verileriGetir(String userId) {
 
         filmPostArrayList.clear();
-        //bu şekilde koleksiyon altındaki her şeyi alabiliriz.
-        firebaseFirestore.collection("filmler").whereEqualTo("userId", userId).orderBy("tarih", Query.Direction.DESCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
-            @Override
-            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
 
-                if (error != null) {
-                    error.printStackTrace(); // Hata detaylarını logla
-                    Toast.makeText(FilmlerActivity.this, "Veri alınamadı: " + error.getMessage(), Toast.LENGTH_SHORT).show();
-                    System.out.println("hata mesajı : "+error.getMessage());
-                }
+        firebaseFirestore.collection("filmler")
+                .whereEqualTo("userId", userId)
+                .orderBy("tarih", Query.Direction.DESCENDING)  // "tarih" alanına göre azalan sırayla
+                .addSnapshotListener(new EventListener<QuerySnapshot>() {
+                    @Override
+                    public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
 
-                if (value != null) {
-                    for (DocumentSnapshot snapshot : value.getDocuments()) {
-                        Map<String, Object> data = snapshot.getData();
+                        if (error != null) {
+                            error.printStackTrace();
+                            Toast.makeText(FilmlerActivity.this, "Veri alınamadı: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                            System.out.println("Hata mesajı: " + error.getMessage());
+                        }
 
-                        //verileri alma işlemir (dünüşüm işlemeli)
-                        String filmAdi = (String) data.get("filmAdi");
-                        String downloadUrl = (String) data.get("downloadurl");
-                        String filmOzeti = (String) data.get("filmOzeti");
-                        String filmYonetmeni = (String) data.get("filmYonetmeni");
-                        String kullaniciPuani = (String) data.get("kullaniciPuani");
-                        String filmId = (String) snapshot.getId();
-                        FilmPost filmPost = new FilmPost(filmAdi,filmYonetmeni,filmOzeti,downloadUrl,kullaniciPuani,filmId);
-                        filmPostArrayList.add(filmPost);
+                        if (value != null) {
+                            for (DocumentSnapshot snapshot : value.getDocuments()) {
+                                Map<String, Object> data = snapshot.getData();
+
+                                String filmAdi = (String) data.get("filmAdi");
+                                String downloadUrl = (String) data.get("downloadurl");
+                                String filmOzeti = (String) data.get("filmOzeti");
+                                String filmYonetmeni = (String) data.get("filmYonetmeni");
+                                String kullaniciPuani = (String) data.get("kullaniciPuani");
+                                String filmId = (String) snapshot.getId();
+                                FilmPost filmPost = new FilmPost(filmAdi, filmYonetmeni, filmOzeti, downloadUrl, kullaniciPuani, filmId);
+                                filmPostArrayList.add(filmPost);
+                            }
+                            filmPostAdapter.notifyDataSetChanged();
+                        }
                     }
-                    filmPostAdapter.notifyDataSetChanged();
-                }
-            }
-        });
+                });
     }
+
+//...
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

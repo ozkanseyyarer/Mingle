@@ -109,9 +109,6 @@ public class FilmPostAdapter extends RecyclerView.Adapter<FilmPostAdapter.FilmPo
                                             // Delete the item and update the list
                                             deleteItem(position);
                                             notifyDataSetChanged();
-                                            Intent intent = new Intent(view.getContext(), FilmlerActivity.class);
-                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                            view.getContext().startActivity(intent);
                                         }
                                     })
                                     .setNegativeButton("Hayır", null)
